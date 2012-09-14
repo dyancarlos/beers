@@ -19,7 +19,9 @@
 		
 		<br />
 		
-		<%= yield %>
+		<% if current_user %>
+			<%= yield %>
+		<% end %>
 		
 	</body>
 </html>

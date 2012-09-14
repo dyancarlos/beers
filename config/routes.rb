@@ -1,7 +1,13 @@
 Beers::Application.routes.draw do
   
   get "home/index"
-  resources :home, :beers
+  resources :beers
+  
+  resources :home do
+    collection do
+      get :login
+    end
+  end
   
   resources :my_beers do
     collection do
@@ -10,8 +16,8 @@ Beers::Application.routes.draw do
   end
   
   match 'auth/:provider/callback', to: 'sessions#create'
-  match 'auth/failure', to: redirect('/')
+  match 'auth/failure', to: redirect('/home/index')
   match 'signout', to: 'sessions#destroy', as: 'signout'
 
-  root :to => 'home#index'
+  root :to => 'home#login'
 end

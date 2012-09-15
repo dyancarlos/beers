@@ -4,7 +4,7 @@
 	
 <% end %>
 
-<h2>My Beers:</h2>
+<h2>My Beers(<%= @mybeers.size %>):</h2>
 <% @mybeers.each do |my| %>
 	<%= my.beer.name %><br />
 <% end %>

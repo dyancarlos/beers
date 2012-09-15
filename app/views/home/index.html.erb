@@ -1,10 +1,9 @@
-<% @beers.each do |beer| %>
-	
-	<%= beer.name %> - <%= link_to "ja tomei", add_my_beers_path(:user_id => current_user.uid, :beer_id => beer.id) %><br />
-	
-<% end %>
-
-<h2>My Beers(<%= @mybeers.size %>):</h2>
 <% @mybeers.each do |my| %>
-	<%= my.beer.name %> - <%= link_to "remover", my, :method => "delete" %><br />
+
+	<div id="each_beer">
+		<%= image_tag("garrafa.png") %>
+		<%#= my.beer.name %> <%#= link_to "remover", my, :method => "delete" %>
+	</div>
+
+	
 <% end %>

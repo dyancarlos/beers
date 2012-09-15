@@ -1,12 +1,18 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require_self
- */
+* { padding: 0px; margin: 0px; }
+html { height: 100%; }
+body { font-family: "Lucida Grande", sans-serif; font-size: 13px; background: #D01F3C url("/assets/bg.png") }
+.clear { clear: both; }
+#nav_top { background: #000; color: #FFF; }
+#nav_top_in { width: 900px; padding: 20px; margin: 0 auto; }
+#nav_top_search { float: left; }
+#nav_top_search .lupa { position: relative; right: 25px; top: 3px; }
+#nav_top_links { float: right; color: #666; }
+#nav_top_links a { color: #F9F7ED; text-decoration: none; font-size: 14px; margin: 10px; }
+#content { width: 900px; padding: 20px; margin: 0 auto; }
+#facebook #facebook_pic { width: 75px; float: left; }
+#facebook #facebook_pic img { border: 2px solid #000; }
+#facebook #facebook_name { padding: 15px; height: auto; width: auto; float: left; font-size: 20px; font-weight: bold; color: #FFF; border-right: 1px solid #ccc; text-shadow: 1px 1px 4px #000;}
+#show_my_beers { background: url("/assets/estante.jpg"); min-height: 300px; height: auto; }
+#top_armario { background: url("/assets/top_estante.png"); height: 50px; width: 900px; margin-top: 50px; }
+#each_beer { float: left; margin: 0px 50px 40px 50px;}
+input[type='text'] { border: 1px solid #ccc; padding: 3px; width: 200px; -webkit-border-radius: 20px; }

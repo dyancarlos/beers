@@ -8,19 +8,45 @@
 	</head>
 	<body>
 		
-		<div id="user_nav">
-		  <% if current_user %>
-				<%#= image_tag("#{current_user.picture}") %>
-		    <%= current_user.name %>
-		    <%= link_to "Sign out", signout_path, id: "sign_out" %>
-		  <% else %>
-		    <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
-		  <% end %>
+		<div id="nav_top">
+			<div id="nav_top_in">
+				<div id="nav_top_search">
+					<%= form_tag beers_path, :method => :get do %>
+						<%= text_field_tag :search, params[:search] %>
+						<%= image_submit_tag("lupa.png", :name => nil, :width => "15", :class => "lupa") %>
+					<% end %>
+				</div>
+				<div id="nav_top_links">
+					<%= link_to "Minhas Cervejas", root_path %> | 
+					<%= link_to "Todas as cervejas", :beers %> | 
+					<%= link_to "Sair", signout_path, id: "sign_out" %>
+				</div>
+				<div class="clear"></div>
+			</div>
 		</div>
 		
-		<br />
-		
-		<%= yield %>
-		
+		<div id="content">
+			<div id="facebook">
+				<div id="facebook_pic">
+					<%= image_tag("#{current_user.picture}", :width => "60") %>
+				</div>
+				<div id="facebook_name">
+					<%= current_user.name	%><br />
+				</div>
+				<div id="facebook_name">
+					<%= pluralize(7, "cerveja") %>
+				</div>
+				<div class="clear"></div>
+			</div>
+			
+			<div id="top_armario"></div>
+			<div id="show_my_beers">
+				<%= yield %>
+				<div class="clear"></div>
+			</div>
+
+			
+		</div>
+
 	</body>
 </html>

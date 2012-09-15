@@ -1,0 +1,17 @@
+* { padding: 0px; margin: 0px; }
+html { height: 100%; }
+body { font-family: "Lucida Grande", sans-serif; font-size: 13px; }
+.clear { clear: both; }
+#header_login { height: 350px; background: #D01F3C url("/assets/bg.png"); border-bottom: 5px solid #ccc;}
+#header_login_in {
+	height: 480px;
+	width: 900px;
+	margin: 0px auto 0px auto;
+	position:relative;
+	top: 70px;
+}
+#beers_image_left { float: left; }
+#text_right {float: right; width: 420px; color: #FFF; margin-top: 100px;}
+#text_right h1 {font-size: 30px; font-weight: bold; text-shadow: 1px 1px 4px #000;}
+#text_right p {text-shadow: 1px 1px 4px #000;}
+#text_right a {padding: 20px; background: #3F4C6B; color: #FFF; font-weight: bold; font-size: 14px; text-decoration: none;}

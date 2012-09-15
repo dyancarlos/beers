@@ -2,13 +2,33 @@
 <html>
 	<head>
 	  <title>Beers</title>
-	  <%= stylesheet_link_tag    "application", :media => "all" %>
+	  <%= stylesheet_link_tag    "login", :media => "all" %>
 	  <%= javascript_include_tag "application" %>
 	  <%= csrf_meta_tags %>
 	</head>
 	<body>
 		
-		<%= yield %>
-		
+		<div id="header_login">
+			<div id="header_login_in">
+				<div id="beers_image_left">
+					<%= image_tag("beers.png") %>
+				</div>
+				
+				<div id="text_right">
+					<h1>Colecione e Compartilhe cada cerveja que você já bebeu!</h1>
+					<br />
+					<p>Basta fazer login com sua conta do facebook e começar a usar e compartilhar!</p>
+					
+					<br />
+					<br />
+					<br />
+					<br />
+					
+					<%= yield %>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+
 	</body>
 </html>

@@ -18,4 +18,8 @@ class User < ActiveRecord::Base
     nil # or consider a custom null object
   end
   
+  def picture
+    facebook.get_picture("me", :type => "normal")
+  end
+  
 end

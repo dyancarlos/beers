@@ -1,4 +1,11 @@
 class SessionsController < ApplicationController
+  
+  def new
+    respond_to do |format|
+      format.html { render :layout => "login" }
+    end
+  end
+  
   def create
     user = User.from_omniauth(env["omniauth.auth"])
     session[:user_id] = user.id

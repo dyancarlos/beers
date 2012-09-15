@@ -1,7 +1,8 @@
 Beers::Application.routes.draw do
   
   get "home/index"
-  resources :home, :beers
+  
+  resources :home, :beers, :sessions
   
   resources :my_beers do
     collection do

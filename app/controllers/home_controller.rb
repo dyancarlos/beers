@@ -4,5 +4,6 @@ class HomeController < ApplicationController
   
   def index
     @beers = Beer.all
+    @mybeers = MyBeer.all
   end
 end

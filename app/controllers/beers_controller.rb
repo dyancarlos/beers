@@ -3,7 +3,7 @@ class BeersController < ApplicationController
   before_filter :logged_in
 
   def index
-    @beers = Beer.all
+    @beers = Beer.search(params[:search])
   end
 
   def new

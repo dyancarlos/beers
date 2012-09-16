@@ -1,9 +1,8 @@
 <% @mybeers.each do |my| %>
 
 	<div id="each_beer">
-		<%= image_tag("garrafa.png") %>
-		<%#= my.beer.name %> <%#= link_to "remover", my, :method => "delete" %>
+		<%= image_tag("garrafa.png", :width => "76") %>
+		<p><%= my.beer.name %></p> <%#= link_to "remover", my, :method => "delete" %>
 	</div>
 
-	
 <% end %>

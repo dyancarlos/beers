@@ -13,3 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+function GetMyBeer(id){
+	document.getElementById(id).style.display = "block";
+}
+function HideGetMyBeer(id){
+	document.getElementById(id).style.display = "none";
+}

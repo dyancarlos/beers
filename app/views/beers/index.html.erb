@@ -1,9 +1,11 @@
 <% @beers.each do |beer| %>
 	
-	<div id="each_beer">
+	<div id="each_beer" onmouseover="GetMyBeer(<%= beer.id %>)" onmouseout="HideGetMyBeer(<%= beer.id %>)">
 		<%= image_tag("garrafa.png", :width => "76") %>
+		<div class="get_beer" id="<%= beer.id %>" style="display: none">
+			<%= link_to image_tag("ok.png"), add_my_beers_path(:user_id => current_user.uid, :beer_id => beer.id) %>
+		</div>
 		<p><%= beer.name %></p>
 	</div>
-	<%#= link_to "ja tomei", add_my_beers_path(:user_id => current_user.uid, :beer_id => beer.id) %>
 	
 <% end %>

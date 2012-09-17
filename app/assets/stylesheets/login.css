@@ -2,7 +2,7 @@
 html { height: 100%; }
 body { font-family: "Lucida Grande", sans-serif; font-size: 13px; }
 .clear { clear: both; }
-#header_login { height: 350px; background: #D01F3C url("/assets/bg.png"); border-bottom: 5px solid #ccc;}
+#header_login { height: 350px; background: url("/assets/back.jpg"); border-bottom: 5px solid #ccc;}
 #header_login_in {
 	height: 480px;
 	width: 900px;

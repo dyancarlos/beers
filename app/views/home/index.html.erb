@@ -1,7 +1,21 @@
+<% if @mybeers.blank? %>
+	<div id="start">
+		<p>uma cerveja?</p>
+		<span>inicie procurando uma cerveja:</span>
+		<%= form_tag beers_path, :method => :get do %>
+			<%= text_field_tag :search, params[:search] %>
+			<%= image_submit_tag("lupa.png", :name => nil, :width => "15", :class => "lupa") %>
+		<% end %>
+	</div>
+<% end %>
+
 <% @mybeers.each do |my| %>
 
-	<div id="each_beer">
-		<%= image_tag("garrafa.png", :width => "76") %>
+	<div id="each_beer" onmouseover="GetMyBeer(<%= my.id %>)" onmouseout="HideGetMyBeer(<%= my.id %>)">
+		<%= image_tag("garrafa2.png", :width => "76") %>
+		<div class="share_facebook" id="<%= my.id %>" style="display: none">
+			<%= image_tag("facebook.png", :width => "40") %>
+		</div>
 		<p><%= my.beer.name %></p> <%#= link_to "remover", my, :method => "delete" %>
 	</div>
 

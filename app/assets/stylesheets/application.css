@@ -1,6 +1,6 @@
 * { padding: 0px; margin: 0px; }
 html { height: 100%; }
-body { font-family: "Lucida Grande", sans-serif; font-size: 13px; background: #D01F3C url("/assets/bg.png") }
+body { font-family: "Lucida Grande", sans-serif; font-size: 13px; background: url("/assets/back.jpg"); }
 .clear { clear: both; }
 #nav_top { background: #000; color: #FFF; border-bottom: 1px solid #ccc; }
 #nav_top_in { width: 900px; padding: 20px; margin: 0 auto; }
@@ -18,4 +18,8 @@ body { font-family: "Lucida Grande", sans-serif; font-size: 13px; background: #D
 #each_beer { position: relative; width: 130px; float: left; margin: 10px 47px 30px 47px; text-align: center; }
 #each_beer p { text-shadow: 1px 1px 3px #333; font-weight: bold; position: relative; top: 7px; }
 .get_beer { position: absolute; bottom: 20px; right: 10px; }
+.share_facebook { position: absolute; bottom: 20px; right: 10px; }
 input[type='text'] { border: 1px solid #ccc; padding: 3px; width: 200px; -webkit-border-radius: 20px; }
+#start { margin: 0px; font-size: 50px; color: rgb(196, 172, 131); text-align: center; position: relative; top: 20px; font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif; }
+#start span { font-size: 14px; }
+#start .lupa { position: relative; right: 30px; top: 3px; }

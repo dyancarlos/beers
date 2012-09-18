@@ -28,13 +28,13 @@
 		<div id="content">
 			<div id="facebook">
 				<div id="facebook_pic">
-					<%= image_tag("#{current_user.picture}", :width => "60") %>
+					<%#= image_tag("#{current_user.picture}", :width => "60") %>
 				</div>
 				<div id="facebook_name">
 					<%= current_user.name	%><br />
 				</div>
 				<div id="count_my_beers">
-					<%= pluralize(7, "Cerveja") %>
+					<%= pluralize(count_my_beers, "Cerveja") %>
 				</div>
 				<div class="clear"></div>
 			</div>

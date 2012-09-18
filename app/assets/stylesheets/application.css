@@ -15,7 +15,7 @@ body { font-family: "Lucida Grande", sans-serif; font-size: 13px; background: ur
 #facebook #count_my_beers { padding: 15px 0px 15px 0px;float: right; font-size: 20px; font-weight: bold; color: #FFF; text-shadow: 1px 1px 4px #000;}
 #show_my_beers { background: url("/assets/estante.jpg"); min-height: 300px; height: auto; }
 #top_armario { background: url("/assets/top_estante.png"); height: 50px; width: 900px; margin-top: 30px; }
-#each_beer { position: relative; width: 86px; float: left; margin: 10px 47px 30px 47px; text-align: center; }
+#each_beer { position: relative; width: 130px; float: left; margin: 10px 23px 30px 23px; text-align: center; }
 #each_beer p { text-shadow: 1px 1px 3px #333; font-weight: bold; position: relative; top: 7px; }
 .get_beer { position: absolute; bottom: 20px; right: 10px; }
 .share_facebook { position: absolute; bottom: 20px; right: 10px; }
